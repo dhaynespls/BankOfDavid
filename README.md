@@ -1,2 +1,13 @@
 # BankOfDavid
-Sample Reference Java Repo
+
+Sample blurb.
+
+## Using Git
+
+## Using IntelliJ
+
+## Doxygen
+
+### Writing Code
+
+### Running Tests
