@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CheckingTest {
+public class CreditTest {
 
     @Test
     public void getLastUUID() {
@@ -16,9 +16,5 @@ public class CheckingTest {
 
     @Test
     public void deposit() {
-    }
-
-    @Test
-    public void withdraw() {
     }
 }

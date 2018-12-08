@@ -31,8 +31,4 @@ public class Checking extends Account {
     public void withdraw() {
 
     }
-
-    public boolean checkWorkingJunit() {
-        return true;
-    }
 }
