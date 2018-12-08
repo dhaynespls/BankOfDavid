@@ -2,23 +2,23 @@ package com.bankofdavid.accounts;
 
 import com.bankofdavid.stores.CashStore;
 
+import java.util.UUID;
+
 /**
  * Words describing the Account class.
  */
 public abstract class Account {
 
-    // Starting balance to insert into the CashStore
-    private int accountStartingBalance;
     // Name of the Account
     private String accountName;
+
     // Associated CashStore for this Account
     private CashStore myCashStore;
 
     public Account () {
         super();
-        this.accountStartingBalance = 0;
         this.accountName = "";
-        this.myCashStore = new CashStore();
+        this.myCashStore = new CashStore(0);
     }
 
     /**
@@ -28,34 +28,13 @@ public abstract class Account {
      */
     public Account (int startingBalance, String accountName) {
         super();
-        this.accountStartingBalance = startingBalance;
         this.accountName = accountName;
-        this.myCashStore = new CashStore();
+        this.myCashStore = new CashStore(startingBalance);
     }
 
-    /**
-     * Words about the deposit abstract function.
-     */
-    abstract void deposit();
+    abstract void deposit(int amountToDeposit);
 
-    /**
-     * Words about the withdrawl abstract function.
-     */
-    abstract void withdrawl();
+    abstract void getLastUUID();
 
-    public int getAccountStartingBalance() {
-        return accountStartingBalance;
-    }
-
-    public String getAccountName() {
-        return accountName;
-    }
-
-    public void setAccountStartingBalance(int accountStartingBalance) {
-        this.accountStartingBalance = accountStartingBalance;
-    }
-
-    public void setAccountName(String accountName) {
-        this.accountName = accountName;
-    }
+    abstract void getSpecificTransaction();
 }

@@ -1,9 +1,34 @@
 package com.bankofdavid.accounts;
 
 
+import java.util.UUID;
+
 public class Checking extends Account {
 
-    public void deposit () {
+    public Checking() {
+        super();
+    }
+
+    public Checking(int startingBalance, String accountName) {
+        super(startingBalance, accountName);
+    }
+
+    @Override
+    void getLastUUID() {
+
+    }
+
+    @Override
+    void getSpecificTransaction() {
+
+    }
+
+    @Override
+    void deposit(int amountToDeposit) {
+
+    }
+
+    public void withdraw() {
 
     }
 
