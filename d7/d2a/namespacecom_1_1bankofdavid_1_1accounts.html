@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Bank of David: com.bankofdavid.transfers.Transferer Class Reference</title>
+<title>Bank of David: Package com.bankofdavid.accounts</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -37,8 +37,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../namespaces.html"><span>Packages</span></a></li>
-      <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="../../namespaces.html"><span>Packages</span></a></li>
+      <li><a href="../../annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -59,10 +59,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="../../annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="../../classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="../../hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="../../functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="../../namespaces.html"><span>Packages</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -81,20 +78,35 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>bankofdavid</b></li><li class="navelem"><b>transfers</b></li><li class="navelem"><a class="el" href="../../d9/d1e/classcom_1_1bankofdavid_1_1transfers_1_1_transferer.html">Transferer</a></li>  </ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>bankofdavid</b></li><li class="navelem"><a class="el" href="../../d7/d2a/namespacecom_1_1bankofdavid_1_1accounts.html">accounts</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="../../d6/d6b/classcom_1_1bankofdavid_1_1transfers_1_1_transferer-members.html">List of all members</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">com.bankofdavid.transfers.Transferer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Package com.bankofdavid.accounts</div>  </div>
 </div><!--header-->
 <div class="contents">
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/com/bankofdavid/transfers/Transferer.java</li>
-</ul>
-</div><!-- contents -->
+
+<p>The <a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html">Account</a> abstract class describes common functionality of a BankOfDavid account as well as any high level functions that are utilized in all accounts.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html">Account</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d82/classcom_1_1bankofdavid_1_1accounts_1_1_checking.html">Checking</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d31/classcom_1_1bankofdavid_1_1accounts_1_1_credit.html">Credit</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html">Account</a> abstract class describes common functionality of a BankOfDavid account as well as any high level functions that are utilized in all accounts. </p>
+<p>A <a class="el" href="../../d2/d31/classcom_1_1bankofdavid_1_1accounts_1_1_credit.html">Credit</a> <a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html">Account</a> may only add money to the CashStore (taking on debt).</p>
+<p>A <a class="el" href="../../d0/d82/classcom_1_1bankofdavid_1_1accounts_1_1_checking.html">Checking</a> <a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html">Account</a> may add or remove money from the CashStore.</p>
+<p>Date: 12/10/18 Author: <a href="#" onclick="location.href='mai'+'lto:'+'dha'+'yn'+'es3'+'@g'+'mu.'+'ed'+'u'; return false;">dhayn<span style="display: none;">.nosp@m.</span>es3@<span style="display: none;">.nosp@m.</span>gmu.e<span style="display: none;">.nosp@m.</span>du</a> </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
