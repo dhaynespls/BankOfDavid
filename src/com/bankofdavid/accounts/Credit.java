@@ -33,7 +33,7 @@ public class Credit extends Account{
      * @throws RuntimeException
      */
     private void throwNegativeError() throws RuntimeException {
-        throw new java.lang.RuntimeException("You charge a negative number.");
+        throw new java.lang.RuntimeException("You cannot charge a negative number.");
     }
 
     /**

@@ -55,7 +55,6 @@ public class CashStore {
      */
     public CashStore (int startingBalance) {
         super();
-        this.currentBalance = startingBalance;
         theCashStore = new ArrayList<>();
         this.updateStore(startingBalance);
     }
@@ -100,7 +99,7 @@ public class CashStore {
      */
     public Map<String, String> getFromStore(UUID transactionUUID) {
         for (Map<String, String> transaction : this.theCashStore) {
-            if(transaction.get("UUID") == transactionUUID.toString()) {
+            if(transaction.get("UUID").equals(transactionUUID.toString())) {
                 return transaction;
             }
         }
