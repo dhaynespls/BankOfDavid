@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>bankofdavid</b></li><li class="navelem"><a class="el" href="../../d7/d2a/namespacecom_1_1bankofdavid_1_1accounts.html">accounts</a></li><li class="navelem"><a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html">Account</a></li>  </ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>bankofdavid</b></li><li class="navelem"><b>accounts</b></li><li class="navelem"><a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html">Account</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,14 +91,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">com.bankofdavid.accounts.Account Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html" title="The Account abstract class describes common functionality of a BankOfDavid account as well as any hig...">Account</a> abstract class describes common functionality of a BankOfDavid account as well as any high level functions that are utilized in all accounts.  
+ <a href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for com.bankofdavid.accounts.Account:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.png" usemap="#com.bankofdavid.accounts.Account_map" alt=""/>
   <map id="com.bankofdavid.accounts.Account_map" name="com.bankofdavid.accounts.Account_map">
-<area href="../../d0/d82/classcom_1_1bankofdavid_1_1accounts_1_1_checking.html" alt="com.bankofdavid.accounts.Checking" shape="rect" coords="0,56,220,80"/>
-<area href="../../d2/d31/classcom_1_1bankofdavid_1_1accounts_1_1_credit.html" alt="com.bankofdavid.accounts.Credit" shape="rect" coords="230,56,450,80"/>
+<area href="../../d0/d82/classcom_1_1bankofdavid_1_1accounts_1_1_checking.html" title="A Checking Account may add or remove money from the CashStore. " alt="com.bankofdavid.accounts.Checking" shape="rect" coords="0,56,220,80"/>
+<area href="../../d2/d31/classcom_1_1bankofdavid_1_1accounts_1_1_credit.html" title="A Credit Account may only add money to the CashStore (taking on debt). " alt="com.bankofdavid.accounts.Credit" shape="rect" coords="230,56,450,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -119,9 +121,15 @@ Public Member Functions</h2></td></tr>
 UUID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html#aa6a87a44ff0eb3c31bc9d516986693a4">getLastUUID</a> ()</td></tr>
 <tr class="memdesc:aa6a87a44ff0eb3c31bc9d516986693a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last UUID used to store a transaction into the CashStore. <br/></td></tr>
 <tr class="separator:aa6a87a44ff0eb3c31bc9d516986693a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a100df4c5e4981597634d52a04ab0322b"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html#a100df4c5e4981597634d52a04ab0322b">getSpecificTransaction</a> (UUID specificTransactionUUID)</td></tr>
-<tr class="memdesc:a100df4c5e4981597634d52a04ab0322b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return transaction details for a given UUID.  <a href="#a100df4c5e4981597634d52a04ab0322b">More...</a><br/></td></tr>
-<tr class="separator:a100df4c5e4981597634d52a04ab0322b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2db9c32e318279a76eff7749434428b"><td class="memItemLeft" align="right" valign="top">Map&lt; String, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html#aa2db9c32e318279a76eff7749434428b">getSpecificTransaction</a> (UUID specificTransactionUUID)</td></tr>
+<tr class="memdesc:aa2db9c32e318279a76eff7749434428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return transaction details for a given UUID.  <a href="#aa2db9c32e318279a76eff7749434428b">More...</a><br/></td></tr>
+<tr class="separator:aa2db9c32e318279a76eff7749434428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e3db1a8c6e6f13d816ce53a77759d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21e3db1a8c6e6f13d816ce53a77759d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateStore</b> (int cashValue)</td></tr>
+<tr class="separator:a21e3db1a8c6e6f13d816ce53a77759d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c13f183b0cb171ca98d39c0cdaf9bb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c13f183b0cb171ca98d39c0cdaf9bb5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentBalance</b> ()</td></tr>
+<tr class="separator:a8c13f183b0cb171ca98d39c0cdaf9bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade87701f091b0289ad4ec2d67c0c163a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade87701f091b0289ad4ec2d67c0c163a"></a>
 String&#160;</td><td class="memItemRight" valign="bottom"><b>getAccountName</b> ()</td></tr>
 <tr class="separator:ade87701f091b0289ad4ec2d67c0c163a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +137,10 @@ String&#160;</td><td class="memItemRight" valign="bottom"><b>getAccountName</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setAccountName</b> (String accountName)</td></tr>
 <tr class="separator:a358e1b248cc5d50ba9f5564d968bbad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="../../db/d9f/classcom_1_1bankofdavid_1_1accounts_1_1_account.html" title="The Account abstract class describes common functionality of a BankOfDavid account as well as any hig...">Account</a> abstract class describes common functionality of a BankOfDavid account as well as any high level functions that are utilized in all accounts. </p>
+<p>Date: 12/10/18 Author: <a href="#" onclick="location.href='mai'+'lto:'+'dha'+'yn'+'es3'+'@g'+'mu.'+'ed'+'u'; return false;">dhayn<span style="display: none;">.nosp@m.</span>es3@<span style="display: none;">.nosp@m.</span>gmu.e<span style="display: none;">.nosp@m.</span>du</a> </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a687de99c27e31ab9b05ac969c545692d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -198,26 +209,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setAccountName</b> (S
 
 </div>
 </div>
-<a class="anchor" id="a100df4c5e4981597634d52a04ab0322b"></a>
+<a class="anchor" id="aa2db9c32e318279a76eff7749434428b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">abstract void com.bankofdavid.accounts.Account.getSpecificTransaction </td>
+          <td class="memname">Map&lt;String, String&gt; com.bankofdavid.accounts.Account.getSpecificTransaction </td>
           <td>(</td>
           <td class="paramtype">UUID&#160;</td>
           <td class="paramname"><em>specificTransactionUUID</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return transaction details for a given UUID. </p>

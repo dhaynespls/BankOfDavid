@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>bankofdavid</b></li><li class="navelem"><a class="el" href="../../dc/df6/namespacecom_1_1bankofdavid_1_1stores.html">stores</a></li><li class="navelem"><a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html">CashStore</a></li>  </ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>bankofdavid</b></li><li class="navelem"><b>stores</b></li><li class="navelem"><a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html">CashStore</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,15 +91,25 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">com.bankofdavid.stores.CashStore Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> acts as the source of truth for the history of transactions for a given account name as well as the running account balance.  
+ <a href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab96b8941333e28eac95db2c6e61e842d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab96b8941333e28eac95db2c6e61e842d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CashStore</b> (int startingBalance)</td></tr>
+<tr class="memitem:a0233114127f812b58a904052f05ea00b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0233114127f812b58a904052f05ea00b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html#a0233114127f812b58a904052f05ea00b">CashStore</a> ()</td></tr>
+<tr class="memdesc:a0233114127f812b58a904052f05ea00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a new account with default values. <br/></td></tr>
+<tr class="separator:a0233114127f812b58a904052f05ea00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96b8941333e28eac95db2c6e61e842d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html#ab96b8941333e28eac95db2c6e61e842d">CashStore</a> (int startingBalance)</td></tr>
+<tr class="memdesc:ab96b8941333e28eac95db2c6e61e842d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a new <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> with a non-default.  <a href="#ab96b8941333e28eac95db2c6e61e842d">More...</a><br/></td></tr>
 <tr class="separator:ab96b8941333e28eac95db2c6e61e842d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28340288a3facec26105d3a28b35df5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28340288a3facec26105d3a28b35df5e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateStore</b> (int cashValue)</td></tr>
+<tr class="memitem:a28340288a3facec26105d3a28b35df5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html#a28340288a3facec26105d3a28b35df5e">updateStore</a> (int cashValue)</td></tr>
+<tr class="memdesc:a28340288a3facec26105d3a28b35df5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the current state of the <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> by inserting a transaction entry into the Store as well as updating class attributes.  <a href="#a28340288a3facec26105d3a28b35df5e">More...</a><br/></td></tr>
 <tr class="separator:a28340288a3facec26105d3a28b35df5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec264339b2fd1c3931bae03a3aa4dd28"><td class="memItemLeft" align="right" valign="top">Map&lt; String, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html#aec264339b2fd1c3931bae03a3aa4dd28">getFromStore</a> (UUID transactionUUID)</td></tr>
+<tr class="memdesc:aec264339b2fd1c3931bae03a3aa4dd28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a UUID, search the <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> for the associated transaction.  <a href="#aec264339b2fd1c3931bae03a3aa4dd28">More...</a><br/></td></tr>
+<tr class="separator:aec264339b2fd1c3931bae03a3aa4dd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1082c8d5b97477b40e557ebc614d1c37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1082c8d5b97477b40e557ebc614d1c37"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentBalance</b> ()</td></tr>
 <tr class="separator:a1082c8d5b97477b40e557ebc614d1c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,6 +117,84 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentBalance</b> 
 UUID&#160;</td><td class="memItemRight" valign="bottom"><b>getLastUsedUUID</b> ()</td></tr>
 <tr class="separator:a0007172c7ea043a2d775002ec03f50b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> acts as the source of truth for the history of transactions for a given account name as well as the running account balance. </p>
+<p>Date: 12/10/18 Author: <a href="#" onclick="location.href='mai'+'lto:'+'dha'+'yn'+'es3'+'@g'+'mu.'+'ed'+'u'; return false;">dhayn<span style="display: none;">.nosp@m.</span>es3@<span style="display: none;">.nosp@m.</span>gmu.e<span style="display: none;">.nosp@m.</span>du</a> </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab96b8941333e28eac95db2c6e61e842d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.bankofdavid.stores.CashStore.CashStore </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startingBalance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a new <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> with a non-default. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startingBalance</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aec264339b2fd1c3931bae03a3aa4dd28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, String&gt; com.bankofdavid.stores.CashStore.getFromStore </td>
+          <td>(</td>
+          <td class="paramtype">UUID&#160;</td>
+          <td class="paramname"><em>transactionUUID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a UUID, search the <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> for the associated transaction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transactionUUID</td><td>The UUID to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The associated transaction. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a28340288a3facec26105d3a28b35df5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.bankofdavid.stores.CashStore.updateStore </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cashValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the current state of the <a class="el" href="../../db/d64/classcom_1_1bankofdavid_1_1stores_1_1_cash_store.html" title="The CashStore acts as the source of truth for the history of transactions for a given account name as...">CashStore</a> by inserting a transaction entry into the Store as well as updating class attributes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cashValue</td><td>The value of cash that is used in updating the Store. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/com/bankofdavid/stores/CashStore.java</li>
 </ul>
