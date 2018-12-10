@@ -1,4 +1,12 @@
+/**
+ * A Credit Account may only add money to the CashStore (taking on debt).
+ *
+ * Date: 12/10/18
+ * Author: dhaynes3@gmu.edu
+ */
 package com.bankofdavid.accounts;
+
+import java.util.UUID;
 
 public class Credit extends Account{
 
@@ -6,20 +14,36 @@ public class Credit extends Account{
         super();
     }
 
-    @Override
-    void getLastUUID() {
+    public Credit(int startingBalance, String accountName) {
+        super(startingBalance, accountName);
 
-    }
-
-    @Override
-    void getSpecificTransaction() {
-
-    }
-
-    @Override
-    void deposit(int amountToDeposit) {
-        if(amountToDeposit < 1) {
-            throw new java.lang.RuntimeException("this is not quite as bad");
+        if(! isValuePositive(startingBalance)) {
+            throwNegativeError();
         }
+    }
+
+    private void throwNegativeError() {
+        throw new java.lang.RuntimeException("You charge a negative number.");
+    }
+
+    private boolean isValuePositive(int value) {
+        return value > 0;
+    }
+
+    @Override
+    public void deposit(int amountToDeposit) {
+        if(! isValuePositive(amountToDeposit)) {
+            throwNegativeError();
+        }
+    }
+
+    @Override
+    public UUID getLastUUID() {
+        return null;
+    }
+
+    @Override
+    public void getSpecificTransaction(UUID specificTransactionUUID) {
+
     }
 }
