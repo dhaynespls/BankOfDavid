@@ -36,14 +36,6 @@ public class Checking extends Account {
     }
 
     /**
-     * Return the last UUID used to store a transaction into the CashStore.
-     */
-    @Override
-    public UUID getLastUUID() {
-        return null;
-    }
-
-    /**
      * Return transaction details for a given UUID.
      * @param specificTransactionUUID The UUID to use when querying for the specific transaction.
      */

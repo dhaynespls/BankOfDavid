@@ -50,7 +50,9 @@ public abstract class Account {
     /**
      * Return the last UUID used to store a transaction into the CashStore.
      */
-    public abstract UUID getLastUUID();
+    public UUID getLastUUID() {
+        return this.myCashStore.getLastUsedUUID();
+    }
 
     /**
      * Return transaction details for a given UUID.

@@ -38,11 +38,6 @@ public class Credit extends Account{
     }
 
     @Override
-    public UUID getLastUUID() {
-        return null;
-    }
-
-    @Override
     public void getSpecificTransaction(UUID specificTransactionUUID) {
 
     }
