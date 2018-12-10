@@ -1,13 +1,11 @@
+package com.bankofdavid.accounts;
+
 /**
  * A Checking Account may add or remove money from the CashStore.
  *
  * Date: 12/10/18
  * Author: dhaynes3@gmu.edu
  */
-package com.bankofdavid.accounts;
-
-import java.util.UUID;
-
 public class Checking extends Account {
 
     /**
@@ -32,16 +30,7 @@ public class Checking extends Account {
      */
     @Override
     public void deposit(int amountToDeposit) {
-
-    }
-
-    /**
-     * Return transaction details for a given UUID.
-     * @param specificTransactionUUID The UUID to use when querying for the specific transaction.
-     */
-    @Override
-    public void getSpecificTransaction(UUID specificTransactionUUID) {
-
+        this.updateStore(amountToDeposit);
     }
 
     /**
@@ -49,6 +38,6 @@ public class Checking extends Account {
      * @param amountToWithdraw
      */
     public void withdraw(int amountToWithdraw) {
-
+        this.updateStore(amountToWithdraw * -1);
     }
 }

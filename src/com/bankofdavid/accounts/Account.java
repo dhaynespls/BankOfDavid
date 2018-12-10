@@ -1,3 +1,10 @@
+package com.bankofdavid.accounts;
+
+import com.bankofdavid.stores.CashStore;
+
+import java.util.Map;
+import java.util.UUID;
+
 /**
  * The Account abstract class describes common functionality of a BankOfDavid account as well as any high level
  * functions that are utilized in all accounts.
@@ -5,12 +12,6 @@
  * Date: 12/10/18
  * Author: dhaynes3@gmu.edu
  */
-package com.bankofdavid.accounts;
-
-import com.bankofdavid.stores.CashStore;
-
-import java.util.UUID;
-
 public abstract class Account {
 
     // Name of the Account
@@ -58,7 +59,17 @@ public abstract class Account {
      * Return transaction details for a given UUID.
      * @param specificTransactionUUID The UUID to use when querying for the specific transaction.
      */
-    public abstract void getSpecificTransaction(UUID specificTransactionUUID);
+    public Map<String, String> getSpecificTransaction(UUID specificTransactionUUID) {
+        return this.myCashStore.getFromStore(specificTransactionUUID);
+    }
+
+    public void updateStore(int cashValue) {
+        this.myCashStore.updateStore(cashValue);
+    }
+
+    public int getCurrentBalance() {
+        return this.myCashStore.getCurrentBalance();
+    }
 
     public String getAccountName() {
         return accountName;
